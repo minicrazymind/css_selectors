@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: crimson;
+  font-family: 'Trade Winds';
+}
+
+div > h1 {
+  text-decoration: underline;
+}
+
+div p {
+  font-size: 20px;
+}
+
+h1:hover, h2:hover, p:hover{
+  font-weight: bold;
+  color: Tomato;
+}
+
+div+div {
+  text-decoration: overline;
+}
+
+
+.mainContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.heroTitle{
+  display: flex;
+  justify-content: center;
+  width: 100vw; /*Image changed to 100% viewing width of browser*/
+  height: 100vh; /*Image changed to 100% viewing height of browser*/
+  background-size: cover; /*Scales the image to cover the entire element*/
+  background-repeat: no-repeat; /*No repition of background image*/
+  background-position: top; /*Image starts from top*/
+  padding: 100px; /*Padding for text in the title*/
+  background-image: url('data/Teemo.jpg');
+  font-size: 7vw;
+  color: crimson;
+}
+
+
+.outerContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+}
+
+
+.columnContainer { /*Used to separate rows of columns Resets format for next row */
+  content: "";
+  display: flex;
+  clear: both;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.column * {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 32px;
+
+}
+
+.columnImage {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer { /*Footers of website colors change according to page type*/
+  text-align: center;
+  padding: 10px;
+  background-color: #990d06;
+}
